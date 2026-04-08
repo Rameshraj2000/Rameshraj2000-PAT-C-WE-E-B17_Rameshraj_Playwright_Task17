@@ -5,7 +5,7 @@ from pages.login_page import LoginPage
 def test_success_login(page):
     lp = LoginPage(page)
     lp.navigate()
-    lp.login("draj56403@gmail.com", "Ramesh@1#")
+    lp.login("", "")
     lp.verify_dashboard()
 #negative test case wrong username
 def test_failure_login(page):
@@ -28,5 +28,5 @@ def test_submit_button(page):
 def test_logout(page):
     lp = LoginPage(page)
     lp.navigate()
-    lp.logout("draj56403@gmail.com", "Ramesh@1#")
+    lp.logout("", "")
     lp.verify_log_case()
